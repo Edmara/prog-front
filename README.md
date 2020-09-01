@@ -1,2 +1,2 @@
 # prog-front
-college classes.
+this project is destined to web programming college classes
