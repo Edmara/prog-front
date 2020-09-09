@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RodapeComponent implements OnInit {
 
+  public headerText = 'Texto a ser exibido. Gosta de angular? ';
+  public url = 'http://www.google.com.br'
   constructor() { }
 
   ngOnInit(): void {
