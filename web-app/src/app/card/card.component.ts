@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
+  public imagem = '';
+  public exibe = false;
+  public descricao = 'Disciplina de programação';
+  public usuario = 'Edmara Cavalcante';
+  public profissao = 'Engenheira de Software';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public exibePerfil() {
+    this.exibe = !this.exibe;
   }
 
 }

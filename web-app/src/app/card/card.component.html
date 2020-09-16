@@ -5,23 +5,19 @@
 <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 
 <body>
-
     <div class="w3-container">
-        <h2>Card aula angular</h2>
-
+        <h2>Perfil de {{ usuario }}</h2>
+        <p>Profissão: {{ profissao }}</p>
         <div class="w3-card-4 w3-dark-grey" style="width:50%">
 
-            <div class="w3-container w3-center">
-                <h3>Friend Request</h3>
+            <div *ngIf="exibe" class="w3-container w3-center">
                 <img src="../../assets/img/edmara.png" alt="Avatar" style="width:80%">
-                <h5>John Doe</h5>
-
-                <div class="w3-section">
-                    <button class="w3-button w3-green">Exibir</button>
-                    <button class="w3-button w3-red">Ocultar</button>
-                </div>
+                <h5 class="card-title"> {{ usuario }}</h5>
+                <p class="card-text"> {{ descricao }} </p>
             </div>
-
+            <div class="w3-section">
+                <button class="w3-button w3-green" (click)="exibePerfil()">Exibir</button>
+            </div>
         </div>
     </div>
 
