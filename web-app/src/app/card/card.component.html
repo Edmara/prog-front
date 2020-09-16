@@ -11,12 +11,14 @@
         <div class="w3-card-4 w3-dark-grey" style="width:50%">
 
             <div *ngIf="exibe" class="w3-container w3-center">
-                <img src="../../assets/img/edmara.png" alt="Avatar" style="width:80%">
+                <h3>Friend Request</h3>
+                <img [src]="imagem" alt="Avatar" style="width:80%">
                 <h5 class="card-title"> {{ usuario }}</h5>
                 <p class="card-text"> {{ descricao }} </p>
             </div>
             <div class="w3-section">
                 <button class="w3-button w3-green" (click)="exibePerfil()">Exibir</button>
+                <button class="w3-button w3-red" (click)="ocultar()">Ocultar</button>
             </div>
         </div>
     </div>

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  public imagem = '';
+  public imagem = '../../assets/img/edmara.png';
   public exibe = false;
   public descricao = 'Disciplina de programação';
   public usuario = 'Edmara Cavalcante';
@@ -19,7 +19,11 @@ export class CardComponent implements OnInit {
   }
 
   public exibePerfil() {
-    this.exibe = !this.exibe;
+    this.exibe = true;
+  }
+
+  public ocultar(){
+    this.exibe = false;
   }
 
 }
