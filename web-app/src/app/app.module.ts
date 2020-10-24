@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { RodapeComponent } from './rodape/rodape.component';
@@ -7,7 +8,6 @@ import { ContadorComponent } from './contador/contador.component';
 import { CardComponent } from './card/card.component';
 import { FormReativoComponent } from './form-reativo/form-reativo.component';
 import { TemplateFormComponent } from './template-form/template-form.component';
-import { FormsModule, ReactiveFormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
