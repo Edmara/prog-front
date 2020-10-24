@@ -8,41 +8,28 @@ import { FormBuilder, FormControl, FormGroup, NgForm, Validators } from '@angula
 })
 export class FormReativoComponent implements OnInit {
 
-  formCadastro : FormGroup;
+  formCadastro: FormGroup;
 
-  constructor(private fb : FormBuilder) {
+  constructor(private fb: FormBuilder) {
     this.formCadastro = new FormGroup({
-      'nome': new FormControl(null, Validators.required),
-      'email': new FormControl(null, Validators.required),
+      'nome': new FormControl(null, Validators.compose([
+        Validators.required,
+        Validators.min(5),
+        Validators.maxLength(150)
+      ])),
+      'email': new FormControl(null, Validators.compose([Validators.email])),
       'telefone': new FormControl(null, Validators.required),
+      'cpf': new FormControl(null, Validators.required),
+      'password': new FormControl(null, Validators.required),
+      'confirmPassword': new FormControl(null, Validators.required),
     });
   }
 
-  criarFormularioDeUsuario(){
-    this.formCadastro = this.fb.group({
-      nome: [
-        '',
-        Validators.compose([
-          Validators.required,
-          Validators.min(5),
-          Validators.maxLength(150)
-        ])
-      ],
-      email: ['', Validators.compose([Validators.email])],
-      cpf: ['', Validators.compose([Validators.required])],
-      nascimento: ['', Validators.compose([Validators.required])],
-      senha: [
-        '', 
-        Validators.compose([
-          Validators.required, Validators.min(8)])],
-      confirmarSenha: ['', Validators.compose([Validators.required])],
 
-    });
-  }
   ngOnInit(): void {
   }
 
-  enviar(){
+  enviar() {
     let dados = `
       Nome: ${this.formCadastro.value.nome}
       Email: ${this.formCadastro.value.email}
