@@ -24,7 +24,7 @@ Componente
 
 ## Exercícios JSON 
 
-01 -> código pode ser encontrado aqui Exercicios/JSON
+01 -> código pode ser encontrado em Exercicios/JSON
 
 02 -> Mapeie quais entidades são representadas no JSON
     R: o json apresenta uma squad, dentro dessa squad tem seus atributos, e dentre eles uma lista de membros.
@@ -33,4 +33,4 @@ Componente
 
 ## Exercícios JavaScript
 
-    R: Os códigos JS podem ser encontrados aqui [Exercicios/JS](https://github.com/edmaracav/prog-front/tree/master/Exercicios/JS)
+    R: Os códigos JS podem ser encontrados em Exercicios/JS
