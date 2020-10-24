@@ -2,7 +2,7 @@
 This project is destined to web programming college classes
 
 
-# Exercicios Angular
+## Exercicios Angular
 Componente
 
 01 -> Crie um componente para um card com dois botões que acionem um método para exibir ou ocultar a imagem do perfil
@@ -10,7 +10,7 @@ Componente
     R: para exibir o card, executar o projeto web-app.
 
 
-# Exercícios StarWars
+## Exercícios StarWars
 02 -> Informe quais endpoints são necessários para se obter todos os atores de todos os filmes onde Obi Wan Kenobi apareceu 
 
     R: people para pegar todos os personagens ->  https://swapi.dev/api/people/
@@ -22,7 +22,7 @@ Componente
     Altura -> 182
 
 
-# Exercícios JSON 
+## Exercícios JSON 
 
 01 -> código pode ser encontrado aqui Exercicios/JSON
 
@@ -32,6 +32,6 @@ Mapeie quais entidades são representadas no JSON
     Dentro da lista tenho os atributos de membros.
 
 
-Exercícios JavaScript
+## Exercícios JavaScript
 
     R: Os códigos JS podem ser encontrados aqui Exercicios/JS
