@@ -15,6 +15,13 @@
                 <img [src]="imagem" alt="Avatar" style="width:80%">
                 <h5 class="card-title"> {{ usuario }}</h5>
                 <p class="card-text"> {{ descricao }} </p>
+
+                <div *ngFor="let certification of lista">
+                    <div class="alert alert-primary" role="alert">
+                        {{ certification.cert }}
+                    </div>
+                </div>
+
             </div>
             <div class="w3-section">
                 <button class="w3-button w3-green" (click)="exibePerfil()">Exibir</button>
