@@ -26,8 +26,7 @@ Componente
 
 01 -> código pode ser encontrado aqui Exercicios/JSON
 
-02 -> 
-Mapeie quais entidades são representadas no JSON
+02 -> Mapeie quais entidades são representadas no JSON
     R: o json apresenta uma squad, dentro dessa squad tem seus atributos, e dentre eles uma lista de membros.
     Dentro da lista tenho os atributos de membros.
 

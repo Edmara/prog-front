@@ -5,16 +5,23 @@ import { AppComponent } from './app.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { ContadorComponent } from './contador/contador.component';
 import { CardComponent } from './card/card.component';
+import { FormReativoComponent } from './form-reativo/form-reativo.component';
+import { TemplateFormComponent } from './template-form/template-form.component';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
     AppComponent,
     RodapeComponent,
     ContadorComponent,
-    CardComponent
+    CardComponent,
+    FormReativoComponent,
+    TemplateFormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
