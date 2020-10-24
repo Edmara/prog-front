@@ -33,4 +33,4 @@ Componente
 
 ## Exercícios JavaScript
 
-    R: Os códigos JS podem ser encontrados aqui Exercicios/JS
+    R: Os códigos JS podem ser encontrados aqui [Exercicios/JS](Exercicios/JS)
